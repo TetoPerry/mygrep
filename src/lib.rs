@@ -34,6 +34,7 @@ impl ExtendedRegexpMatcher {
     }
 }
 
+#[derive(Clone)]
 pub enum Matcher {
     ExtendedRegexp(ExtendedRegexpMatcher),
     FixedStrings(FixedStringsMatcher),
